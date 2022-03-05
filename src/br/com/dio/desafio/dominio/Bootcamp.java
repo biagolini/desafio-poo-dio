@@ -32,4 +32,13 @@ public class Bootcamp {
     public int hashCode() {
         return Objects.hash(nome, descricao, dataInicial, dataFinal, devsInscritos, conteudos);
     }
+
+    @Override
+    public String toString() {
+        return "BootCamp\n" +
+                "\tNome = " + getNome() + '\n' +
+                "\tDescrição = " + getDescricao() + '\n' +
+                "\tData Inicial = " + getDataInicial() + '\n' +
+                "\tData Final = " + getDataFinal() ;
+    }
 }
